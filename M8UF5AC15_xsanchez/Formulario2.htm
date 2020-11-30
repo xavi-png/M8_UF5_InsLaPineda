@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cat">
+    <head>
+        <title>Formulari d’enviament</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+            function validar(){
+                var psswd=document.getElementById("psswd").value;
+                var confpsswd=document.getElementById("confpsswd").value;
+                if(psswd==confpsswd){
+                    return true;
+                }
+                else{
+                    alert("No coincideix");
+                    return false;
+                    }
+                }
+                </script>
+    </head>
+        <body style="background-color: rgb(255, 255, 255);
+        font-family:Verdana;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;">
+<!--1-->
+    <form action="mailto:xavier.sanchez@inslapineda.cat" method="GET" onsubmit="return validar();">
+        <input type="hidden" name="id" id="id" value="xavi">
+        <table border="0" align="center" style="background-color: #acaaaa; padding: 0px; font-family: Verdana;">
+            <tr style="background-color: #306090; color: rgb(255, 255, 255);">
+                <td colspan="3">Enviar misatge<a href="img/reload.png.gif"><img src="img/reload.png.gif"
+                     alt="Img no disponible" align="right"></a></td>
+            </tr>
+            <tr>
+                <td align="center"><strong>Nom:</strong></td>
+            <td><input type="text" name="nombre" id="Nombre" maxlength="10 " required></td> <br>
+            </tr>
+            <tr>
+                <td align="center"><strong>Usuari:</strong></td>
+                <td><input type="text" name="nick" id="name" maxlength="8"></td>
+            </tr>
+            <tr>
+                <td align="center"><strong>Contrasenya:</strong></td>
+                <td><input type="password" name="Contrasenya" id="psswd" required></td>
+            </tr>
+            <tr>
+                <td align="center"><strong>Repeticio de contrasenya:</strong></td>
+                <td><input type="password" name="rep_contrasenya" id="confpsswd" required></td>
+            </tr>
+            <tr>
+                <td align="center"><strong>Quins jocs t'interessen?</strong></td>
+                    <td><input type="checkbox" name="joc" id="fortnite">Fortnite<br>
+                        <input type="checkbox" name="joc" id="Rust">Rust<br>
+                        <input type="checkbox" name="joc" id="Pubg">Pubg<br>
+                        <input type="checkbox" name="joc" id="Csgo">Csgo</td>
+            </tr>
+            <tr>
+               <td align="center"><strong>E-mail</strong></td>
+                <td><input type="mail" name="mail" id="e-mail" required></td> <br>
+            </tr>
+            <tr>
+                <td align="center"><strong>Arxiu:</strong></td>
+                <td><input type="text" name="Arxiu" id="Arxiu"></td>
+                <td><input type="file" name="file"></td>
+            </tr>
+            <tr>
+                <td align="center"><strong>Imatge:</strong></td>
+                <td><input type="text" name="txtimg" id="txtimg"></td>
+                <td><input type="file" name="img id="img"></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center" style="font-size: small;">
+                    El tamany de l'arxiu i la imatge no pot excedir els 4 KBytes</td>
+            </tr>
+            <tr>
+                <td align="center" style="font-size: small;" colspan="3">Requereix resposta:
+                    <input type="radio" name="marcar" id="si" value="Si" required>Si
+                    <input type="radio" name="marcar" id="no" value="No">No</td>
+            </tr>  
+            <tr>
+                <td colspan="3" style="font-size: large;" align="center"><strong>Missatge</strong></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><textarea name="descripcion" id="descripcion" cols="45" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><input type="submit" name="Envia" id="envia" value="envia">
+                            <input type="button" name="Borrar" id="borrar" value="borrar"></td>
+                            <td></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+    </html>

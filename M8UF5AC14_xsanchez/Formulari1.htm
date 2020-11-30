@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formulari 1 d'enregistramen</title>
+        <meta charset="UTF-8">
+    </head>
+        <body style="background-color: rgb(233, 178, 178);
+                    font-family:Arial;
+                    width: 60%;
+                    margin-left: auto;
+                    margin-right: auto;">
+<!--CAP-->
+        <h1 align="center">Formulari basic de registre</h1>
+            <form action="" method="GET">
+                <fieldtest>
+<!--Nombre y apellido-->
+            <hr>
+                    <label for="Nombre">Nombre:</label><br>
+                        <input type="text" name="nom" id="Nombre" maxlength="30"> <br>
+                    <label for="Apellido">Apellido:</label><br>
+                        <input type="text" name="Apellido" id="Apellido" maxlength="30"><br>
+<!--SEX-->
+            <hr>
+                    <label for="sexe">Seleccione su sexo:</label> <br>
+                        <input type="radio" name="sex" id="Hombre" value="Hombre">Hombre<br>
+                        <input type="radio" name="sex" id="Mujer" value="Mujer">Mujer<br>
+<!--Poblacio-->
+            <hr>
+                    <label for="Poblacio">Poblacion:</label>
+                        <select>
+                            <option value="Arbúcies">Arbúcies</option>
+                            <option value="Badalona">Badalona</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Girona">Girona</option>
+                            <option value="Vilassar de Mar">Vilassar de Mar</option>
+                        </select>
+<!--Correo electronico-->
+            <hr>
+                    <label for="mail">Correo electronico:</label>
+                        <input type="mail" name="mail" id="mail" value="@"><br>
+<!--Descripcion-->
+            <hr>
+                    <textarea name="descripcion" id="descripcion" cols="70" rows="10"></textarea>
+<!--casilla1-->
+            <hr>
+                    <input type="checkbox" checked id="casilla1" name="casilla1">Vull rebre informació sobre novetats i ofertes<br>
+        
+<!--casilla 2-->
+                    <input type="checkbox" name="casilla2" id="casilla2">Declaro haver llegit i acceptar les
+                        condicions generals del programa i la normativa sobre protecció de dades indicada
+                        al RGPD.<br>
+<!--BOTON--><!--Pide button no submit en la practica-->
+            <hr>
+                    <input type="button" name="Enviar" id="enviar" value="Enviar">
+                </fieldtest>
+            </form>
+        </body>
+</html>
